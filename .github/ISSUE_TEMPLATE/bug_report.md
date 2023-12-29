@@ -1,26 +1,29 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: "\U0001F31F FEATURE: "
-labels: enhancement
+name: Bug report
+about: Create a report to help us improve
+title: "⚠️ BUG: "
+labels: bug
 assignees: ds92ko
 
 ---
 
-## 📝 기능 설명
-> 새로운 기능에 대한 간략한 설명
+## 📝 버그 설명
+> 발생한 버그에 대한 간략한 설명
 
-## 💡 동기
-> 이 기능이 필요하거나 유익한 이유 설명
+## 🤔 기대 동작
+> 기대했던 동작에 대한 설명
 
-## ✅ 완료 기준
->  기능이 완료되기 위해 충족되어야 하는 기준 목록
+## 😯 실제 동작
+> 실제로 발생한 동작 또는 에러 메시지
 
-## 🛠 구현 목록
-- [ ] 기능 구현에 대한 상세
+## 🌐 발생 환경
+> 이 버그가 발생한 환경 또는 조건
+
+## 📷 스크린샷
+> 스크린샷 첨부
 
 ## 📌 기타 사항
-> 기능에 대한 추가적인 컨텍스트, 아이디어, 고려 사항 제공
+> 버그 개선에 대한 추가적인 컨텍스트, 아이디어, 고려 사항 제공
 
 ## 🚦 우선 순위
 > 해당하는 레벨에 체크
