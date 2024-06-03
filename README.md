@@ -1,69 +1,36 @@
-# 🖼️ 이미지 확장자 변환 프로그램
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 📋 Table of Contents
+## Getting Started
 
-- [👀 Introduction](#👀-introduction)
-  - [🌟 Features](#🌟-features)
-- [🙌 About the Projects](#🙌-about-the-projects)
-  - [🛠️ Stacks](#🛠️-stacks)
-- [🪄 Getting Started](#🪄-getting-started)
-  - [📌 Prerequisites](#📌-prerequisites)
-  - [🚀 Setup](#🚀-setup)
-  - [📦 Installation](#📦-installation)
-  - [🏃 Run the Program](#🏃-run-the-program)
-  - [⚙️ Configuration](#⚙️-configuration)
-
-<br/>
-
-## 👀 Introduction
-
-> 이 프로그램은 지정된 폴더 내의 이미지 파일을 읽어와 WebP 형식으로 변환하는 간단한 Node.js 스크립트입니다.<br/>Sharp 라이브러리를 사용하여 이미지 변환 작업을 수행합니다.
-
-### 🌟 Features
-
-.jpg, .png, .jpeg, .gif 이미지 파일을 WebP로 변환
-
-<br/>
-
-## 🙌 About the Projects
-
-### 🛠️ Stacks
-
-| **Configuration** | **Stacks**                                                                                                                                                                                                                                                                                                                           |
-| :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Environment       | <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> |
-| Config            | <img src="https://img.shields.io/badge/npm v9.6.7-CB3837?style=for-the-badge&logo=npm&logoColor=white">                                                                                                                                                                                                                              |
-| Development       | <img src="https://img.shields.io/badge/node v18.17.1-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"> <img src="https://img.shields.io/badge/sharp-99CC00?style=for-the-badge&logo=sharp&logoColor=white">                                                                                                                |
-
-<br/>
-
-## 🪄 Getting Started
-
-### 📌 Prerequisites
-
-> Node.js가 설치되어 있어야 합니다
-
-### 🚀 Setup
+First, run the development server:
 
 ```bash
-$ git clone https://github.com/ds92ko/image-ext-converter.git
-$ cd image-ext-converter
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### 📦 Installation
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-$ npm install
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### 🏃 Run the Program
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-```bash
-$ node index.js
-```
+## Learn More
 
-### ⚙️ Configuration
+To learn more about Next.js, take a look at the following resources:
 
-- 프로젝트 실행 전 루트 디렉토리에 `input` 폴더를 생성합니다
-- 변환하고자 하는 이미지 파일을 `input` 폴더에 추가합니다
-- 변환된 WebP 파일은 `output` 폴더에 생성됩니다
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
