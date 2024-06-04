@@ -5,20 +5,20 @@ import path from 'path';
 import sharp from 'sharp';
 import { v4 as uuidv4 } from 'uuid';
 import { revalidatePath } from 'next/cache';
-
-const allowedExtensions = ['.webp', '.png', '.jpg', '.jpeg', '.svg', '.gif'];
+import { ExtensionType } from '@/types';
+import { extensions } from '@/constants';
 
 export async function createInvoice(formData: FormData) {
   const files = formData.getAll('files') as File[];
-  const extension = formData.get('extension') as string;
+  const extension = formData.get('extension') as ExtensionType;
 
   const outputFolderPath = path.join(process.cwd(), '/src/output');
 
   if (!fs.existsSync(outputFolderPath)) fs.mkdirSync(outputFolderPath);
 
   const imageFiles = files.filter(file => {
-    const ext = path.extname(file.name).toLowerCase();
-    return allowedExtensions.includes(ext);
+    const ext = path.extname(file.name).toLowerCase() as ExtensionType;
+    return extensions.includes(ext);
   });
 
   try {
@@ -26,7 +26,7 @@ export async function createInvoice(formData: FormData) {
       const arrayBuffer = await imageFile.arrayBuffer();
       const buffer = Buffer.from(arrayBuffer);
       const fileName = path.basename(imageFile.name, path.extname(imageFile.name));
-      const filePath = path.join(outputFolderPath, `${fileName}_${uuidv4()}.${extension}`);
+      const filePath = path.join(outputFolderPath, `${fileName}_${uuidv4()}${extension}`);
 
       sharp(buffer).toFile(filePath, (err, data) => {
         if (err) {

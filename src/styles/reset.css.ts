@@ -5,7 +5,6 @@ globalStyle('*', {
   margin: 0,
   padding: 0,
   border: 0,
-  fontSize: '100%',
   font: 'inherit',
   verticalAlign: 'baseline'
 });
@@ -21,4 +20,9 @@ globalStyle('ol, ul', {
 globalStyle('a', {
   textDecoration: 'none',
   color: 'inherit'
+});
+
+globalStyle('button', {
+  background: 'transparent',
+  cursor: 'pointer'
 });
