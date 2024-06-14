@@ -38,7 +38,6 @@ export const logo = style({
 export const main = style({
   position: 'relative',
   zIndex: 200,
-  paddingTop: 76,
   flexGrow: 1
 });
 

@@ -7,7 +7,7 @@ import Emoji4Animation from '../../../public/lotties/emoji_4.json';
 import { button } from '@/styles/forms.css';
 import { container, sectionDescription, sectionSubTitle, sectionTitle } from '@/styles/layout.css';
 import Link from 'next/link';
-import { introSection, lottieBox, startSection } from '@/app/(main)/page.css';
+import { introSection, textBox, lottieBox, startSection } from '@/app/(main)/page.css';
 import { flexBox, textWhite } from '@/styles/globals.css';
 import { Card, CardList } from '@/styles/ui.css';
 
@@ -15,8 +15,8 @@ export default function Page() {
   return (
     <div>
       <section className={introSection}>
-        <div className={`${container} ${flexBox} between center lg`}>
-          <div>
+        <div className={`${container} ${flexBox} between center`}>
+          <div className={textBox}>
             <h2 className={sectionTitle}>온라인 이미지 변환기</h2>
             <p className={sectionDescription}>
               더 이상 번거로운 소프트웨어 설치 없이,

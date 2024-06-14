@@ -10,6 +10,10 @@ export const startSection = style({
   textAlign: 'center'
 });
 
+export const textBox = style({
+  paddingInline: vars.spacing.lg
+});
+
 export const lottieBox = style({
   margin: '0 auto',
   width: 200,
